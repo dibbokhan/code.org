@@ -1,0 +1,319 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-bar {
+    background-color: #13a4c1;
+  margin: 0;
+  padding: 0.25rem 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+.nav-left a img {
+    width: 40px;
+    border: none;
+    vertical-align: middle;
+}
+.nav-left ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    vertical-align: center;
+}
+.nav-left ul a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: small;
+}
+.nav-left ul li a:hover {
+    text-decoration: underline 2px orange;
+}
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+.nav-right ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 7px;
+    border: 2px solid white ;
+    border-radius: 3px;
+}
+.nav-right ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    vertical-align: center;
+}    
+.main {
+    text-align: left;
+    background-position: 50% 100%; 
+    background-image: url(pl-superhero-banner-yellow-bg.png);
+    display: flex;
+    
+}
+.superhero-girl {
+    max-width: 1020px;
+    margin: 5rem;
+    
+    
+}
+.superhero-girl a {
+    border-radius: 3px;
+    width: 140px;
+    align-items: start;
+    text-decoration: none;
+    border: 1px solid white ;
+    background-color: #44769f;
+    color: aliceblue;
+    padding: 0.7rem;
+    position: absolute;
+    left: 5rem;
+}
+.main h1 {
+    color: #292F36;
+    margin: 0 0 0.5em 0;
+    font-family: "Barlow Semi Condensed Semibold", sans-serif;
+    font-size: 3rem;
+    line-height: 1.16;
+    font-weight: 500;
+    text-align: left;
+}
+.main h2 {
+    color: #292F36;
+    font-family: "Metropolis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1em;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin: 1em 0;
+    text-align: left;
+    max-width: 490px;
+}
+.superhero-img img{
+   width: 700px;
+   height: 400px;
+   padding-bottom: 0px;
+}
+.container {
+    margin-top: 1rem;
+}
+.every-student {
+    color: rgb(59, 51, 51);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.flex-container {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.quary {
+    border: none;
+}
+.quary a {
+    text-decoration: none;
+}
+.quary a h1 {
+    color: rgb(59, 51, 51);
+    font-size: 3rem;
+    text-align: center;
+}
+.quary a p {
+    color: #292F36;
+    margin-top: -10px;
+    font-size: small;
+}
+.quary a p:hover {
+    cursor:default ;
+}
+.quary a h1:hover {
+    color: #13a4c1;
+}
+/* ///////////////// */
+
+
+
+
+/* ///////////////// */
+.out {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.block {
+    border-radius: 6px;
+}
+.background {
+    background-image: url(hour-of-code.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    width: 300px;
+    margin: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+.innerback {
+    background-color: aquamarine;
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    margin-top: 1rem;
+
+}
+.innerback h3 {
+    text-decoration: none;
+}
+.innerback h5 {
+    text-decoration: none;
+}
+.user {
+    background-color: #FFA400;
+    text-align: center;
+    height: 40px;
+    justify-content: center;
+}
+.user h2 {
+    color: beige;
+    margin-top: 5px;
+}
+.footer {
+    background-color: #343331;
+    height: 100PX;
+    width: 100%;
+    
+}
+
+/* smallerScreen */
+@media only screen and (max-width: 600px) {
+    body {
+    height: 100%;
+    font-family: var(--main-font);
+    font-weight: var(--regular-font-weight);
+    font-style: normal;
+    font-size: 14px;
+    color: var(--neutral_dark);
+    margin: 0;
+}
+  .nav-left ul {
+        display: none;
+    }
+    .create {
+        display: none;
+    }
+    .superhero-girl {
+        margin: 1rem;
+        display: block;
+    }
+    .main {
+        display: block;
+        margin-top: -20px;
+    }
+    .main a {
+        left: 6rem;
+    }
+    .main h1 {
+        color: #292F36;
+        margin: 0 0 0.5em 0;
+        font-family: "Barlow Semi Condensed Semibold", sans-serif;
+        font-size: 3rem;
+        line-height: 1.16;
+        font-weight: 300;
+        text-align: center;
+    }
+    .main h2 {
+        color: #292F36;
+        font-family: "Metropolis", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 1em;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        margin: 1em 0;
+        text-align: center;
+        max-width: 490px;
+    }   
+    .superhero-img img{
+        width: 100%;
+        height: auto
+    }
+    .flex-container {
+        /* margin-left: 2rem;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        display: block;
+        justify-content: center; */
+        display: flex;
+        justify-content: space-between;
+        row-gap: 3em;
+        margin-top: -3em;
+    
+    }
+    .quary a {
+        margin: 35px;
+    }
+    .quary a h1 {
+        text-align: center;
+        font-size: 13px;
+    }
+   
+    .quary a p {
+        text-align: center;
+        font-size: 7px;
+        line-height: 10px;
+        margin-top: 1%
+    }
+    .quary a h1:hover{
+        color: #13a4c1;
+    }   
+    .container{
+        background-color: whitesmoke;
+        margin-top: -20px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 3em;
+        
+
+    }
+    .every-student {
+        font-size: small;
+    }
+    .out {
+        display: block;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+}    
